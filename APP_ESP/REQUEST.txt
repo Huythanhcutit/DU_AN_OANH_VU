@@ -1,0 +1,7 @@
+Giám sát nhiệt độ, độ ẩm không khí, độ ẩm đất, ánh sáng (Bằng các cảm biến) 
+cũng như đưa ra cảnh báo khi các thông số này nằm ngoài điều kiện bình thường
+ thông qua màn hình LCD và trên Webserver.
+- Điều khiển máy bơm, đèn sưởi bằng nút nhấn trên thân sản phẩm,trên WebServer
+ hoặc bằng app trên điện thoại.
+- Giao tiếp qua app hoặc web tĩnh.
+http://icons.iconarchive.com/icons/iconsmind/outline/512/Light-Bulb-icon.png

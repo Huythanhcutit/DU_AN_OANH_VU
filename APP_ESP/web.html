@@ -1,0 +1,118 @@
+ <html>
+<head>  
+<meta http-equiv='refresh' content='5;  url=/' >  
+<title>WIFI CONTROLLER</title>  
+<script>  
+
+            function startTime()   
+            {  
+                var today = new Date();  
+
+                var h = today.getHours();  
+                var m = today.getMinutes();  
+                var s = today.getSeconds();  
+
+                m = checkTime(m);  
+                s = checkTime(s);  
+
+                document.getElementById('timer').innerHTML = h + ':' + m + ':' + s;  
+
+                var t = setTimeout(function() {  
+                    startTime();  
+                }, 500);  
+            }  
+
+            function checkTime(i)   
+            {  
+                if (i < 10) {  
+                    i = '0' + i;  
+                }  
+                return i;  
+            }  
+        </script>  
+
+
+</head>  
+
+<style type = 'text/css'>  
+body {background-color:black;  
+          background-size:cover;  
+
+}  
+a {   
+display: inline-block;  
+ width: 32px;  
+ height: 32px;  
+}  
+
+h1 {  
+  font: 4em normal Arial, Helvetica, sans-serif;  
+ padding: 3px;  margin: 0;  
+ text-align:center;  
+ color:yellow;  
+}  
+h2 {  
+ font: 2em normal Arial, Helvetica, sans-serif;  
+ padding: 3px;  margin: 0;  
+ text-align:center;  
+ color:cyan;  
+}  
+h3 {  
+ font: 2em normal Arial, Helvetica, sans-serif;   //font chu
+ padding: 3px;  margin: 0;
+ text-align:center;  
+ color:white;   
+}  
+.setting {width:960px; margin:0 auto; padding:30px; border:1px solid #333; color:#fff; }  
+</style>  
+
+
+<body background='https://i.pinimg.com/736x/08/ef/de/08efde7b8d918a1a23f6099f72a6d7fc.jpg' onload='startTime()' >   
+<img src= 'https://upload.wikimedia.org/wikipedia/commons/4/42/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_S%C6%B0_ph%E1%BA%A1m_K%E1%BB%B9_thu%E1%BA%ADt_%C4%90%C3%A0_N%E1%BA%B5ng.png' width='150' height='150'>  
+  <p>  
+  <center>  
+  <h2>GIAM SAT VA DIEU KHIEN THIET BI</h2>   
+  <h3>  
+
+  <br>  
+  CHE DO:     &nbsp  &nbsp  &nbsp   
+   TAY   
+
+
+  <br/>  
+
+  <br>  
+  BOM:     &nbsp  &nbsp  &nbsp   
+     TINH TRANG: OFF &nbsp  &nbsp  &nbsp   
+  <img src= 'http://icons.iconarchive.com/icons/iconsmind/outline/512/Light-Bulb-icon.png' width='40' height='40'> &nbsp  &nbsp  &nbsp   
+
+
+  <a href='./on1'><input type='submit' value='ON' ></a> &nbsp  
+  <a href='./off1'><input type='submit' value='OFF'></a>  
+  <br/>  
+
+   <br>  
+  DEN:    &nbsp   &nbsp  &nbsp   
+     TINH TRANG: OFF &nbsp  &nbsp  &nbsp   
+  <img src= 'http://icons.iconarchive.com/icons/iconsmind/outline/512/Light-Bulb-icon.png' width='40' height='40'> &nbsp  &nbsp  &nbsp   
+
+
+  <a href='./on2'><input type='submit' value='ON' ></a> &nbsp  
+  <a href='./off2'><input type='submit' value='OFF'></a>  
+  <br/>  
+
+<h2>  
+ <br>  
+  NHIET DO:   form += (String)nhietdo ;
+<sup>o</sup>c   &nbsp  &nbsp  &nbsp  &nbsp DO AM:    form += (String)doam;
+&nbsp  &nbsp  &nbsp  &nbsp DO AM DAT:    form += (String)doAmDat;
+%  
+<br/>  
+<br>  
+        <div id='timer'></div>  
+<br/>  
+</h2>  
+  </center>  
+</h3>  
+</body>  
+</html>  
